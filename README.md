@@ -2,16 +2,6 @@
 
 2019年猪年，过年微信自动发送祝福和回复祝福的小机器人🤖️。
 
-## 使用
-
-```bash
-git clone git@github.com:AkatQuas/wish-reply-bot.git
-
-cd  wish-reply-bot
-
-pip3 install -r requirements.txt
-```
-
 ## 说明
 
 请谨慎使用，封号什么的咱不知道。
@@ -26,6 +16,27 @@ pip3 install -r requirements.txt
 
 底层机器人来源为 [itchat](https://itchat.readthedocs.io/zh/latest/)。
 
+## 使用体验
+
+如果你进行了一次群发祝福，那么不建议跑秒回的功能，因为两者结构太相似了，bot嫌疑太大了。
+
+如果是我，我只会选择一次群发。然后上人工来进行后续处理，不是很多人会秒回的，所以你来得及的。
+
+如果你是一个达人，坐着都能收到很多祝福，却又不是那么积极的主动回复，就跑秒回的功能吧。（很羡慕，我酸了 🍋。
+
+
+祝福语的自动拼凑在`wish_txt.py`中的`randomWish`中实现，因为加了emoji，使得祝福变得活泼了点。祝福语文案其实很普通，不喜欢祝福语的话，可以在[这里](wish_txt.py)自行替换哦。
+
+## 使用
+
+```bash
+git clone git@github.com:AkatQuas/wish-reply-bot.git
+
+cd  wish-reply-bot
+
+pip3 install -r requirements.txt
+```
+
 ## 运行
 
 给好友挨个单独发送祝福。
@@ -39,8 +50,6 @@ python3 auto_send_wish.py
 ```bash
 python3 auto_reply_wish.py
 ```
-
-祝福语的自动拼凑在`wish_txt.py`中的`randomWish`中实现，因为加了emoji，使得祝福变得活泼了点。不喜欢祝福语的话，可以自行替换哦。
 
 ## 效果
 

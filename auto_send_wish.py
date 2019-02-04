@@ -9,6 +9,7 @@ from wish_txt import randomWish
 def totalWish(nick):
     return nick+'，您好：值此新春佳节，我在这里给您带来新春祝福啦：\n' + randomWish()
 
+
 def chatrun():
 
     itchat.auto_login(enableCmdQR=2)
@@ -19,6 +20,13 @@ def chatrun():
         username = fri['UserName']
         total = totalWish(nick)
         itchat.send(total, toUserName=username)
+        i += 1
+        if i % 3 == 1:
+            time.sleep(1.15)
+        elif i % 3 == 2:
+            time.sleep(1.55)
+        else:
+            time.sleep(1.25)
 
     itchat.run(debug=True)
 
